@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "profiles": {
+    "safe": {
+      "description": "Only extensions reviewed as V2-compatible.",
+      "allow_risky": false,
+      "include_status": [
+        "v2-reviewed"
+      ]
+    },
+    "productivity": {
+      "description": "Safe productivity extensions for todo and scheduled work.",
+      "allow_risky": false,
+      "ids": [
+        "todolist",
+        "tasks",
+        "codebase-index"
+      ]
+    },
+    "memory": {
+      "description": "Memory-related extensions; review before use.",
+      "allow_risky": true,
+      "ids": [
+        "hindsight",
+        "memini-v2",
+        "simple-memory",
+        "claude-memory",
+        "engram-learning",
+        "headroom",
+        "mega-skillstate",
+        "supermemory"
+      ]
+    },
+    "ui": {
+      "description": "TUI and interface extensions; environment-sensitive.",
+      "allow_risky": true,
+      "ids": [
+        "shell-magazine",
+        "enhanced-composer",
+        "timeline-viewer",
+        "notifier"
+      ]
+    },
+    "workflow": {
+      "description": "Specification, delegation, stack, and agent workflow extensions.",
+      "allow_risky": true,
+      "ids": [
+        "spec",
+        "lockie-agent",
+        "pstack",
+        "delegation",
+        "morph-plugin",
+        "ensemble"
+      ]
+    },
+    "all-known": {
+      "description": "Every entry with an authoritative source; unresolved names remain blocked.",
+      "allow_risky": true,
+      "include_resolved": true
+    },
+    "source-builds": {
+      "description": "Pinned source builds only; requires --allow-build and explicit review.",
+      "allow_risky": true,
+      "ids": [
+        "spec"
+      ]
+    },
+    "safe-search": {
+      "description": "Verified search and codebase research extensions with external service requirements.",
+      "allow_risky": false,
+      "ids": [
+        "tavily",
+        "codebase-index"
+      ]
+    },
+    "safe-operations": {
+      "description": "Verified quota, notification, team orchestration, and memory extensions.",
+      "allow_risky": false,
+      "ids": [
+        "quota",
+        "ensemble",
+        "notifier",
+        "supermemory"
+      ]
+    }
+  }
+}
