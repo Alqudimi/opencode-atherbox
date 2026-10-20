@@ -15,7 +15,7 @@ jobs:
           git archive --format=tar.gz --prefix=opencode-atherbox/ -o opencode-atherbox.tar.gz HEAD
           sha256sum opencode-atherbox.tar.gz > opencode-atherbox.tar.gz.sha256
       - name: Publish GitHub release
-        uses: softprops/action-gh-release@v2
+        uses: softprops/action-gh-release@v3
         with:
           generate_release_notes: true
           files: |
